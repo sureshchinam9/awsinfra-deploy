@@ -58,7 +58,7 @@ class AwsinfraDeployStack(Stack):
             action_name='GitHub_Source',
             owner='sureshchinam9',  # Replace with your GitHub username
             repo='awsinfra-deploy',  # Replace with your repository name
-            branch='main',
+            branch='default',
             oauth_token=SecretValue.secrets_manager('github-cdk-token'),
             output=source_output
         )
