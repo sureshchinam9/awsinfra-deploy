@@ -57,7 +57,7 @@ class AwsinfraDeployStack(Stack):
         source_action = codepipeline_actions.GitHubSourceAction(
             action_name='GitHub_Source',
             owner='sureshchinam9',  # Replace with your GitHub username
-            repo='awsinfra-deploy',  # Replace with your repository name
+            repo='awsinfra',  # Replace with your repository name
             branch='default',
             oauth_token=SecretValue.secrets_manager('github-cdk-token'),
             output=source_output
